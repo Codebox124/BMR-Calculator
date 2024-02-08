@@ -16,40 +16,42 @@
     .button-color {
       background-color: #67d901;
     }
+    .b-color{
+      border-color: #67d901;
+    }
   </style>
 </head>
 
 <body class="bg-gray-200 p-4">
 
-  <div class="max-w-md mx-auto bg-white rounded p-6 shadow-md">
-    <h2 class="text-2xl font-bold mb-2">BMR Calculator</h2>
-    <p class="mb-4 text-sm">How many calories your body burns in a day at rest to perform the vital functions necessary
-      for the body to function.</p>
+  <div class="max-w-md mx-auto bg-white rounded-xl p-6 shadow-md border-2 b-color">
+    <h2 class="text-2xl font-bold mb-2">Tasa Metabólica Basal (TMB)</h2>
+    <p class="mb-4 text-sm">Cuántas calorías quema tu cuerpo en un día en reposo para realizar las funciones vitales necesarias para el funcionamiento del organismo.</p>
     <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="weight">Weight (kg)*</label>
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="weight">Peso (Kg)*</label>
       <input
         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         id="weight" type="number" placeholder="Enter weight">
     </div>
     <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="height">Height (cm)*</label>
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="height">Altura (cm)*</label>
       <input
         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         id="height" type="number" placeholder="Enter height">
     </div>
     <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="age">Age (years)*</label>
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="age">Edad (años)*</label>
       <input
         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         id="age" type="number" placeholder="Enter age">
     </div>
     <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="gender">Gender*</label>
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="gender">Sexo*</label>
       <select
         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         id="gender">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
+        <option value="male">Mujer</option>
+        <option value="female">Hombre</option>
       </select>
     </div>
     <div class="flex justify-between">
@@ -61,7 +63,7 @@
         onclick="resetFields()">Reset</button>
     </div>
     <div class="my-4 " id="resultSection">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="bmrResult">Basal Metabolic Rate (BMR)*</label>
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="bmrResult">Tu Tasa Metabólica Basal</label>
       <input
         class="shadow  border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         id="bmrResult" type="text" readonly>
